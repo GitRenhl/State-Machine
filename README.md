@@ -2,7 +2,7 @@
 This is python state pattern implementation for games or other things
 # How to use
 1. Clone repository `https://github.com/GitRenhl/State-Machine.git`
-1. Copy `stete` folder to your project directory
+1. Copy `state` folder to your project directory
 1. Import and code:
 1. Done
 ### Example:
