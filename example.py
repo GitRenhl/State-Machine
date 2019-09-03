@@ -1,6 +1,4 @@
-from state.machine import StateMachine
-from state import ExampleState1
-from state import ExampleState2
+import state as StateManagment
 
 
 class Game:
@@ -8,10 +6,10 @@ class Game:
         self.states = ("state_1", "state_2")
 
         state_dict = {
-            self.states[0]: ExampleState1,
-            self.states[1]: ExampleState2
+            self.states[0]: StateManagment.ExampleState1,
+            self.states[1]: StateManagment.ExampleState2
         }
-        self.game_state = StateMachine(self, state_dict)
+        self.game_state = StateManagment.StateMachine(self, state_dict)
 
         self.game_state.change('state_1')
 
