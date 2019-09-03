@@ -7,13 +7,11 @@ class Game:
     def __init__(self):
         self.states = ("state_1", "state_2")
 
-        self.game_state = StateMachine(
-            self,
-            {
-                self.states[0]: ExampleState1,
-                self.states[1]: ExampleState2
-            }
-        )
+        state_dict = {
+            self.states[0]: ExampleState1,
+            self.states[1]: ExampleState2
+        }
+        self.game_state = StateMachine(self, state_dict)
 
         self.game_state.change('state_1')
 
